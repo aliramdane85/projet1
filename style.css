@@ -1,0 +1,139 @@
+body {
+    background-color: rgb(1, 0, 0);
+    margin: 0;
+    padding: 0;
+}
+nav{
+    width: 100%;
+    height: 90px;
+    background-color: #FFB200;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+ h1{
+    margin: 0;
+    left: 50%;
+    top: 50%;
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    
+    
+    
+}
+
+.parent {
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: all 1s;
+    /**box-shadow: 10px 0px 80px 10px rgb(201, 200, 200);**/
+    border-radius: 50%;
+    cursor: pointer;
+    padding-bottom: 30px;
+    -webkit-animation-name: move;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-delay: 4s;
+    -webkit-animation-iteration-count: infinite;
+    
+}
+@keyframes move {
+    0% {
+        -webkit-transform: rotateY(0deg)
+    }
+    50% {
+        -webkit-transform: rotateY(180deg)
+
+    }
+    100% {
+        -webkit-transform: rotateY(0deg)
+    }
+}
+.parent:active {
+    transform: rotateY(180deg);
+    
+}
+.parent:active button {
+    visibility: hidden;
+}
+
+
+.face {
+    
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    color: azure;
+    position: absolute;
+
+}
+.face1{
+    background-image: url(imag/face1_10dh.png);
+    z-index: 2;
+    background-repeat: no-repeat;
+    
+}
+
+.face2 {
+    background-image: url(imag/face2_20centimes.png);
+    background-repeat: no-repeat;
+    width: 302px;
+    height: 302px;
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+button {
+    width: 150px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #FFB200;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    -webkit-text-shadow: 1px 1px 3px black;
+    cursor: pointer;
+    
+    
+}
+.action {
+    margin-left: 75px;
+    margin-top: 320px;
+    cursor: pointer;
+    
+}
+.action:active  {
+    -webkit-transform: rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+
+}
+.para {
+    position:relative;
+}
+h2{
+    position: absolute;
+    color :rgb(255, 255, 255);
+    left :50%;
+    top: 50%;
+    font-size: 30px;
+    -webkit-transform: translate(-50%,-50%);
+
+}
+span  {
+    color:#FFB200;
+    
+}
+
+
+
+
+    
+   
+    
+
+
+
+
+
